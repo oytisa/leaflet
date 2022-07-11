@@ -1,56 +1,57 @@
-alert('hello WondoGIS alert!')
-console.log('Web Mapping!')
-var map = L.map('map').setView([ 7.10024, 38.62785], 17);
+//Building a data driven maproom
 
-// globals
-let data = [
-	{
-		'title':'Lecturers Lounge',
-		'lat': 7.1014687,
-		'lon': 38.6275358
-	},
-	{
-		'title':'Soil Lab',
-		'lat': 7.1000272,
-		'lon': 38.6268749
-	},
-	{
-		'title':'Bangalo Lodge',
-		'lat': 7.1012967,
-		'lon': 38.6275916
-	},
-	{
-		'title':'House of Society',
-		'lat': 7.1028059,
-		'lon': 38.6294778
-	},
-	{
-		'title':'Guest House',
-		'lat': 7.1014687,
-		'lon': 38.6275358
+// Global variables
+let map;
+// path to csv data
+let path = "data/dunitz.csv";
+let markers = L.featureGroup();
+
+
+// initialize
+$( document ).ready(function() {
+    createMap();
+    readCSV();
+});
+
+// create the map
+function createMap(){
+	map = L.map('map').setView([0,0],5);
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+}
+function mapCSV(data){
+
+	// circle options
+	let circleOptions = {
+		radius: 5,
+		weight: 1,
+		color: 'white',
+		fillColor: 'dodgerblue',
+		fillOpacity: 1
 	}
-]
 
-let myMarkers = L.featureGroup();
+	// loop through each entry
+	data.data.forEach(function(item,index){
+		// create a marker
+		let marker = L.circleMarker([item.latitude,item.longitude],circleOptions)
+		.on('mouseover',function(){
+			this.bindPopup(`${item.title}<br><img src="${item.thumbnail_url}">`).openPopup()
+		})
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+		// add marker to featuregroup
+		markers.addLayer(marker)
+	})
 
-// loop through data
-data.forEach(function(item){
-	// add marker to map
-	let marker = L.marker([item.lat,item.lon]).addTo(map)
-        .bindPopup(item.title)
-        .openPopup();
-    myMarkers.addLayer(marker);
-})
-myMarkers.addTo(map)
+	// add featuregroup to map
+	markers.addTo(map)
 
-//zoom to the extent of the markers
-map.fitBounds(myMarkers.getBounds());
+	// fit map to markers
+	map.fitBounds(markers.getBounds())
+}
 
 
-	
+
+
 
       

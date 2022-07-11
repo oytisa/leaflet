@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <DATABASE>
+    <FIELDS>
+      <FIELD TYPE="STRING">osm_id</FIELD>
+      <FIELD TYPE="STRING">name</FIELD>
+      <FIELD TYPE="STRING">barrier</FIELD>
+      <FIELD TYPE="STRING">highway</FIELD>
+      <FIELD TYPE="STRING">ref</FIELD>
+      <FIELD TYPE="STRING">address</FIELD>
+      <FIELD TYPE="STRING">is_in</FIELD>
+      <FIELD TYPE="STRING">place</FIELD>
+      <FIELD TYPE="STRING">man_made</FIELD>
+      <FIELD TYPE="STRING">other_tags</FIELD>
+      <FIELD TYPE="DOUBLE">X</FIELD>
+      <FIELD TYPE="DOUBLE">Y</FIELD>
+    </FIELDS>
+  </DATABASE>
+  <SOURCE></SOURCE>
+  <HISTORY saga-version="7.8.2">
+    <TOOL library="shapes_points" id="6" name="Add Coordinates to Points">
+      <OPTION type="boolean" id="X" name="X">true</OPTION>
+      <OPTION type="boolean" id="Y" name="Y">true</OPTION>
+      <INPUT type="shapes" id="INPUT" name="Points">
+        <FILE>C:/Users/user/AppData/Local/Temp/processing_TqXMRz/fbf6e47ba4144cbca77cc36f0c32ee58/INPUT.shp</FILE>
+      </INPUT>
+      <OUTPUT type="shapes" id="OUTPUT" name="Output">INPUT</OUTPUT>
+    </TOOL>
+  </HISTORY>
+  <FILE></FILE>
+  <DESCRIPTION></DESCRIPTION>
+  <PROJECTION>
+    <OGC_WKT>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]</OGC_WKT>
+    <PROJ4>+proj=longlat +a=6378137.000000 +b=6356752.314245 +no_defs</PROJ4>
+    <EPSG>-1</EPSG>
+  </PROJECTION>
+</SAGA_METADATA>

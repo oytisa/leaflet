@@ -1,0 +1,31 @@
+osm_id,name,barrier,highway,ref,address,is_in,place,man_made,other_tags,X,Y
+"1150956775",Abaro,,,,,,locality,,"""is_in:continent""=>""Africa"",""is_in:country""=>""Ethiopia"",""is_in:country_code""=>""ET""",38.6333300000,7.1166700000
+"4186956862",soil lab,,,,,,,,"""amenity""=>""library""",38.6268749000,7.1000272000
+"4210285165",bangalo loge,,,,,,,,"""building""=>""yes""",38.6275916000,7.1012967000
+"4210290536",house of society,,,,,,,,"""building""=>""yes""",38.6294778000,7.1028059000
+"4210291855",Guest house,,,,,,,,"""amenity""=>""cafe""",38.6275358000,7.1014687000
+"4210317654",Teachers lounge,,,,,,,,"""building""=>""yes""",38.6280003000,7.1011795000
+"4248911933",,,,,,,,,"""ford""=>""yes""",38.6031873000,7.0957513000
+"4566913009",,,,,,,,,"""craft""=>""sawmill""",38.6328735000,7.1016760000
+"4743023008",,wall,,,,,,,,38.6137005000,7.0924806000
+"4887431044",,,,,,,,tower,"""tower:type""=>""observation""",38.6386074000,7.0993351000
+"6463584285",,,,,,,,,"""name:en""=>""Wondo genet agricultural research center"",""office""=>""government""",38.6223845000,7.0940396000
+"6561275686",_____________________ ___________________ _____________________ _____________ ________________________________ ____________________ ___________________,,,,,,,,"""amenity""=>""college"",""name:en""=>""Wondo Genet College of Forestry and Natural Resources"",""operator""=>""Hawassa University""",38.6270522000,7.1010154000
+"9633307032",,,,,,,,,"""natural""=>""tree""",38.6275769000,7.1009027000
+"9635110311",,,,,,,,,"""natural""=>""wood""",38.6264944000,7.0990572000
+"9635414532",bechmark,,,,,,,survey_point,,38.6209199000,7.1090889000
+"9635556378",guard's tower,,,,,,,,,38.6137461000,7.1073190000
+"9635879467",Mini_market,,,,,,,,"""description""=>""it is a mini market shop right outside of WGCF campus"",""shop""=>""supermarket""",38.6155337000,7.1067000000
+"9635879470",,,,,,,,,"""amenity""=>""restaurant"",""cuisine""=>""coffee_shop""",38.6156229000,7.1065423000
+"9637335144",,,,,,,,,"""amenity""=>""drinking_water""",38.6285748000,7.0986670000
+"9637470163",,,,,,,,,"""natural""=>""tree""",38.6253488000,7.0995666000
+"9637523603",,,,,,,,,"""amenity""=>""fountain"",""description""=>""it is a fountain""",38.6286063000,7.0995466000
+"9637992044",mesgid,,,,,,,,"""amenity""=>""place_of_worship"",""religion""=>""muslim"",""service_times""=>""at 9:00 pm, 6:00 am 11:00 pm""",38.6126832000,7.1125941000
+"9638091956",,,,,,,,,"""description""=>""warka_tree"",""natural""=>""tree""",38.6282933000,7.0996970000
+"9638091957",,,,,,,,,"""natural""=>""tree""",38.6282568000,7.1000486000
+"9638164127",,,,,,,,,"""natural""=>""tree""",38.6264223000,7.1013846000
+"9643517116",,,,,,,,,"""description""=>""it the place where generator is located and use as power station when electric power is turn off."",""generator:method""=>""thermal"",""generator:source""=>""gas"",""power""=>""generator""",38.6258399000,7.1014511000
+"9644788021",,,,,,,,,"""natural""=>""tree""",38.6258481000,7.1024666000
+"9644788322",,,,,,,,,"""natural""=>""tree""",38.6253315000,7.1033237000
+"9644789218",,,,,,,,,"""natural""=>""tree""",38.6265642000,7.1018278000
+"9644930510",tawer,,,,,,,,"""amenity""=>""place_of_worship""",38.6161659000,7.1064210000
